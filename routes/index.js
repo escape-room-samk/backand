@@ -1,7 +1,6 @@
 // https://stackoverflow.com/questions/4295782/how-to-process-post-data-in-node-js
 var express = require('express');
 var router = express.Router();
-var things = require('./things.js');
 var qrReader = require('./qrReader.js');
 var server = require('./server.js');
 
@@ -16,9 +15,8 @@ router.get('/', function (req, res, next) {
 // });
 
 //both index.js and things.js should be in same directory
-router.use('/things', things);
-router.use('/qrReader', qrReader);
-router.use('/server', server);
+router.use('/api/qrReader', qrReader);
+router.use('/api/server', server);
 
 
 module.exports = router;

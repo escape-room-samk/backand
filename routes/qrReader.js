@@ -10,10 +10,9 @@ router.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 router.use(express.json());       // to support JSON-encoded bodies
 
 router.post('/', function (req, res) {
-    var name = req.body.name,
-        color = req.body.color;
+    var qrcode = req.body.qrcode;
 
-    res.send(req.body.name);
+    res.send(qrcode);
 });
 
 module.exports = router;

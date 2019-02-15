@@ -11,7 +11,7 @@ router.use(bodyParser.urlencoded({"extended" : false}));
 //So if you have same URL but with different HTTP OP such as POST,GET etc
 //Then use route() to remove redundant code.
 
-router.route("/users")
+router.route("/")
     .get(function(req,res){
         var response = {};
         mongoOp.find({},function(err,data){

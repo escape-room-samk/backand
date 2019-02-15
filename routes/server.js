@@ -1,15 +1,11 @@
 var express     =   require("express");
-var app         =   express();
 var bodyParser  =   require("body-parser");
 var mongoOp     =   require("../models/mongo");
 var router      =   express.Router();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({"extended" : false}));
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({"extended" : false}));
 
-router.get("/",function(req,res){
-    res.json({"error" : false,"message" : "Hello World"});
-});
 
 //route() will allow you to use same path for different HTTP operation.
 //So if you have same URL but with different HTTP OP such as POST,GET etc
@@ -52,7 +48,7 @@ router.route("/users")
         });
     });
 
-app.use('/',router);
+router.use('/',router);
 
 
 module.exports = router;

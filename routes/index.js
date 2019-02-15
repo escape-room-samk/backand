@@ -2,7 +2,6 @@
 var express = require('express');
 var router = express.Router();
 var qrReader = require('./QRReader.js');
-var server = require('./server.js');
 var server = require('./RFIDReader.js');
 
 
@@ -18,7 +17,6 @@ router.get('/', function (req, res, next) {
 
 //both index.js and things.js should be in same directory
 router.use('/api/QRReader', qrReader);
-router.use('/api/server', server);
 router.use('/api/RFIDReader', server);
 
 

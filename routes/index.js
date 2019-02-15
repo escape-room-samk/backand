@@ -3,6 +3,8 @@ var express = require('express');
 var router = express.Router();
 var things = require('./things.js');
 var qrReader = require('./qrReader.js');
+var server = require('./server.js');
+
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -16,6 +18,8 @@ router.get('/', function (req, res, next) {
 //both index.js and things.js should be in same directory
 router.use('/things', things);
 router.use('/qrReader', qrReader);
+router.use('/server', server);
+
 
 module.exports = router;
 

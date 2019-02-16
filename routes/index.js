@@ -2,19 +2,17 @@
 var express = require("express");
 var router = express.Router();
 var qrReader = require("./QRReader.js");
-var server = require("./RFIDReader.js");
+var RFIDReader = require("./RFIDReader.js");
+var imageReader = require("./imageReader.js");
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
   res.render("index", { title: "Express" });
 });
 
-// router.post('/', function(req, res){
-//   res.send('POST route on things.');
-// });
 
-//both index.js and things.js should be in same directory
 router.use("/api/QRReader", qrReader);
-router.use("/api/RFIDReader", server);
+router.use("/api/RFIDReader", RFIDReader);
+router.use("/api/imageReader", imageReader);
 
 module.exports = router;

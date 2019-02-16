@@ -4,6 +4,8 @@ var router = express.Router();
 var qrReader = require("./QRReader.js");
 var RFIDReader = require("./RFIDReader.js");
 var imageReader = require("./imageReader.js");
+var soundDetector = require("./soundDetector.js");
+
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
@@ -14,5 +16,7 @@ router.get("/", function(req, res, next) {
 router.use("/api/QRReader", qrReader);
 router.use("/api/RFIDReader", RFIDReader);
 router.use("/api/imageReader", imageReader);
+router.use("/api/soundDetector", soundDetector);
+
 
 module.exports = router;

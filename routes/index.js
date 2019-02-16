@@ -5,6 +5,8 @@ var qrReader = require("./QRReader.js");
 var RFIDReader = require("./RFIDReader.js");
 var imageReader = require("./imageReader.js");
 var soundDetector = require("./soundDetector.js");
+var motionSensor = require("./motionSensor.js");
+
 
 
 /* GET home page. */
@@ -17,6 +19,8 @@ router.use("/api/QRReader", qrReader);
 router.use("/api/RFIDReader", RFIDReader);
 router.use("/api/imageReader", imageReader);
 router.use("/api/soundDetector", soundDetector);
+router.use("/api/motionSensor", motionSensor);
+
 
 
 module.exports = router;

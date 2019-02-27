@@ -9,6 +9,14 @@ npm start
 ```
 
 
+run database
+
+```
+mongod
+```
+
+
+
 ##install mongodb
 https://www.youtube.com/watch?v=-0X8mr6Q8Ew
 

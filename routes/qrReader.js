@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var mongoOp = require("../models/QRReaderModel");
+var mongoOp = require("../models/qrReaderModel");
 var router = express.Router();
 
 router.use(bodyParser.json());

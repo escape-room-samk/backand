@@ -2,7 +2,7 @@ version: "2"
 services:
   app:
     container_name: app
-    # image: escaperoom/backend
+    image: escaperoom/backend
     restart: always
     build: .
     ports:

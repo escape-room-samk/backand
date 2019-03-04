@@ -19,9 +19,9 @@ router
       if (err) {
         response = { error: true, message: "Error fetching data" };
       } else {
-        response = { error: false, message: data };
+        response = {error: false, message: data};
       }
-      res.json(response);
+      res.json(data);
     });
   })
 

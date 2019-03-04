@@ -21,7 +21,7 @@ router
       } else {
         response = { error: false, message: data };
       }
-      res.json(response);
+      res.json(data);
     });
   }) 
 

@@ -3,7 +3,7 @@ mongoose.connect("mongodb://localhost:27017/myapp"||"mongodb://127.0.0.1:27017/m
 // create instance of Schema
 var rfidschema = mongoose.Schema({
   devID: String,
-  RFIDMessage: String,
+  value: String,
 });
 
 // create model if not exists.

@@ -3,7 +3,7 @@ mongoose.connect("mongodb://localhost:27017/demoDb", { useNewUrlParser: true });
 // create instance of Schema
 var motionSchema = mongoose.Schema({
   devID: String,
-  motionMessage: String
+  value: String
 });
 
 // create model if not exists.

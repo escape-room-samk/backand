@@ -3,7 +3,7 @@ mongoose.connect("mongodb://localhost:27017/demoDb", { useNewUrlParser: true });
 // create instance of Schema
 var QRschema = mongoose.Schema({
   devID: String,
-  QRMessage: String
+  value: String
 });
 
 // create model if not exists.

@@ -3,7 +3,8 @@ mongoose.connect("mongodb://localhost:27017/test", { useNewUrlParser: true });
 // create instance of Schema
 var imageschema = mongoose.Schema({
   devID: String,
-  value: String
+  question: String,
+  boolean: String,
 });
 
 // create model if not exists.

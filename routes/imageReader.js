@@ -31,8 +31,9 @@ router
     //  from REST request.
     // Add strict validation when you use this in Production.
     db.devID = req.body.devID;
-    // Hash the password using SHA1 algorithm.
-    db.value = req.body.value;
+    db.question = req.body.question;
+    db.boolean = req.body.boolean;
+
     db.save(function(err) {
       // save() will run insert() command of MongoDB.
       // it will add new data in collection.

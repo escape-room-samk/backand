@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/demoDb", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/test", { useNewUrlParser: true });
 // create instance of Schema
 var QRschema = mongoose.Schema({
   devID: String,

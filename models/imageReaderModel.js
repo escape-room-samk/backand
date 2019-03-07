@@ -4,7 +4,7 @@ mongoose.connect("mongodb://localhost:27017/test", { useNewUrlParser: true });
 var imageschema = mongoose.Schema({
   devID: String,
   question: String,
-  boolean: String,
+  boolean: Boolean,
 });
 
 // create model if not exists.

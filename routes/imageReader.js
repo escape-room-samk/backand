@@ -33,6 +33,7 @@ router
     db.devID = req.body.devID;
     db.question = req.body.question;
     db.boolean = req.body.boolean;
+    db.value = req.body.value;
 
     db.save(function(err) {
       // save() will run insert() command of MongoDB.

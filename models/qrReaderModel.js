@@ -4,7 +4,7 @@ mongoose.connect("mongodb://localhost:27017/test", { useNewUrlParser: true });
 var QRschema = mongoose.Schema({
   devID: String,
   value: String,
-  Boolean: Boolean
+  Boolean: String
 });
 
 // create model if not exists.

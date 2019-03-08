@@ -5,7 +5,7 @@ var imageschema = mongoose.Schema({
   devID: String,
   question: String,
   value: String,
-  boolean: Boolean,
+  boolean: String,
 });
 
 // create model if not exists.
